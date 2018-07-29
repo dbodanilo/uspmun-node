@@ -284,12 +284,12 @@ h4.secretário{
 }
 
 .img-parceiro {
-    max-height: 15vh;
+    max-height: 25vh;
 }
 
 .img-patro, .img-parceiro {
     display: block;
-    margin: 4vh auto;
+    margin: 2vh auto;
 }
 
 /* FAQ */
