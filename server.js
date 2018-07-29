@@ -166,6 +166,40 @@ app.get("/comiteSample", function (sol, res) {
 app.get("/unsc", function (sol, res) {
     pagina = {};
     pagina.title = "UNSC";
+    pagina.subtitle = "Fighting a faceless ghost: The efforts against the arising terrorist threat";
+
+    pagina.paragraphs = [
+        "The United Nation's Security Council (UNSC) tackles the new threat of the XXI century: modern terrorism in a globalized world. To discuss such matter, it will be necessary to go to the roots of the word itself, analyzing it's history do discover what is terrorism in the modern world, after its long history.",
+        "The system of debate of this committee will follow the pattern of other Model UN in São Paulo, with some changes in order to reflect better the reality of the UNSC.",
+        "After determining what terrorism is to the UNSC, the next order of business shall be to formulate general strategies to prevent, combat and attenuate terrorist movements (in accordance to the committee definition of what is that)."
+    ];
+
+    pagina.diretores = [
+        {
+            nome: "Victor Portela",
+            cargo: "Academic Director",
+            descricao: [
+                "Hello everyone! I am Victor Portela Costa Marotti, I am 18 years old and (as the rest of the chair) come from São Bernardo do Campo. Many things interest me, such as books, movies, college and Model UN. However, combine that with an extreme case of procrastination and you get someone who has done at least 10% of everything, but never 100% of something! To talk about everything that I have interest in would, therefore, be Impossible, but to summarize: Linguistics, Law, History, Geography, Marvel Comics (specifically spider-man), Lord of the rings and oh, so much more.",
+                "Currently I study Law at Faculdade de Direito de São Bernardo do Campo, which I am loving, working as an intern at Banco Société Générale Brasil, also amazing and finally giving what little free time I have left to this amazing event!"
+            ]
+        },
+        {
+            nome: "Bruno Daré",
+            cargo: "Assistant Director",
+            descricao: [
+                "Aloha, people! I am Bruno Daré Riotto Malta Campos, I am 19 years old, and I come from the megalopolis of São Bernardo do Campo. I am deeply passionate about music and the seventh art (some would say I am a cinephile). I am also obsessed with philosophy, economics, memes.",
+                "I often am being ironic and that’s usually how I describe my personality. I am amused by discussions, existential crises and knowledge in general – I am currently learning how to play the piano and reading Albert Camus. I would say more about myself but my horoscope suggested that I shouldn’t. I recently joined tinder."
+            ]
+        },
+        {
+            nome: "Lucas Motta",
+            cargo: "Assistant Director",
+            descricao: [
+                "Hello, I am Lucas Motta Moreira, I am 18 years old and I come from São Bernardo do Campo. My hobbies and activities are different of the interests of the other directors, starting by the fact that I like math and chemistry, which takes me to study chemistry engineering at University of São Paulo. I am also a great fan of sport, I like most of them, although I am not good playing any of them, about sport, the things that probably like most are the tactics behind the game and how they influence the society and the political relations.",
+                "The convergent point between me and the others members of the chair is the MUN, we all knew it during our high school and since then started to participate of that. As a chair joined by the MUN we are going to do our best to join (or not) the delegates on the pursuit of a solution."
+            ]
+        }
+    ]
 
     res.render("comite-shell", { content: pagina });
 });
@@ -222,14 +256,14 @@ app.get("/embraer", function (sol, res) {
 
 app.get("/ce", function (sol, res) {
     pagina = {};
-    pagina.title = "Embraer";
+    pagina.title = "CE";
 
     res.render("comite-shell", { content: pagina });
 });
 
 app.get("/oea", function (sol, res) {
     pagina = {};
-    pagina.title = "Embraer";
+    pagina.title = "OEA";
 
     res.render("comite-shell", { content: pagina });
 });
