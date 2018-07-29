@@ -144,7 +144,7 @@ nav {
 /* Sections */
 .primeiro {
     margin-top: 35vh;
-    height: 15vh;
+    min-height: 15vh;
 }
 
 .primeiro-index {
