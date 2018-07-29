@@ -43,6 +43,10 @@ p {
     text-align: justify;
 }
 
+a {
+    color: #aacdff;
+}
+
 p, .titulo-texto, dl {
     margin-bottom: 1em;
     max-width: 90vw;
@@ -324,10 +328,6 @@ a:hover{
 }
 .diretors-comitee{
 	margin-top: 2vw;
-}
-
-#comite-content {
-    padding-top: 10vh;
 }
 
 .primeiro2 {
