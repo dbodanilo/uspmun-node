@@ -103,9 +103,11 @@
 				</h1>
 			</div>
 			<section class="text-center page-subtitle">
+				<%if(content.subtitle) { %>
 				<h3>
-					<%=content.subtitle %>
+					<em><%=content.subtitle[0] %></em> <%=content.subtitle[1] %>
 				</h3>
+				<%} %>
 			</section>
 
 			<hr />
@@ -122,6 +124,7 @@
 				<%} %>
 				<%} %>
 				
+				<!--
 				<div class="row diretors-comitee">
 					<div class="col-md-6 center">
 						<div class="container center">
@@ -138,6 +141,7 @@
 						</div>
 					</div>
 				</div>
+				-->
 			</div>
 			</div>
 		</section>
@@ -224,6 +228,7 @@
 				</div>
 			</div>
 			</div>
+			
 			<div class="container center">
 				<div class="text-center buttao-area">
 					<a href="/secretariado" class="btn btn-info btn-lg">Conheça o Secretariado</a>

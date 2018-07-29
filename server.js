@@ -166,7 +166,10 @@ app.get("/comiteSample", function (sol, res) {
 app.get("/unsc", function (sol, res) {
     pagina = {};
     pagina.title = "UNSC";
-    pagina.subtitle = "Fighting a faceless ghost: The efforts against the arising terrorist threat";
+    pagina.subtitle = [
+        "Fighting a faceless ghost:",
+        "The efforts against the arising terrorist threat"
+    ];
 
     pagina.paragraphs = [
         "The United Nation's Security Council (UNSC) tackles the new threat of the XXI century: modern terrorism in a globalized world. To discuss such matter, it will be necessary to go to the roots of the word itself, analyzing it's history do discover what is terrorism in the modern world, after its long history.",
@@ -207,7 +210,11 @@ app.get("/unsc", function (sol, res) {
 app.get("/prb", function (sol, res) {
     pagina = {};
     pagina.title = "PRB";
-    pagina.subtitle = "A matter of dignity: Mohamedou Ould Slahi’s Case";
+    pagina.subtitle = [
+        "A matter of dignity:",
+        "Mohamedou Ould Slahi’s Case"
+    ];
+
     pagina.paragraphs = [
         "When Robert Hooke looked through his microscope, he found several tiny boxes, each as a structure that strengthened and formed something bigger, more organized. These cells were given the name of cells, because of their resemblance to the shape of the prison cells. But would the comparison end there? In a prison, we have in each cell a history, an organization, a human being with its own DNA, which has a function in society. The union of these various cells can be called the prison tissue, which has functions in a larger organ called society. When a tissue fails in its function, we have the organ damage, and this is what this committee will propose to discuss: the analysis of a case that covers a whole problematic of the real functioning of one of the most important prisoners of today, the Guantanamo prison.",
         "Mohamedou Ould Slahi - author of the book \"Guantanamo Diary\" - was part of Al Qaeda in its early days when the organization had gathered to withdraw an authoritarian representative. Salahi followed his life after the movement changed its guidelines, but was arrested in the late twentieth century, and again after the 2001 attacks, by keeping in touch with friends, members of Al Qaeda, then a terrorist group.",
@@ -271,6 +278,36 @@ app.get("/oea", function (sol, res) {
 app.get("/imprensa", function (sol, res) {
     pagina = {};
     pagina.title = "Imprensa";
+    pagina.subtitle = [
+        "Jornalismo até no Twitter:",
+        "Mídia na era digital"
+    ];
+
+    pagina.paragraphs = [
+        "O comitê “Jornalismo até no Twitter: Mídia na Era Digital” vem para cobrir todo o evento USPMUN e presentear os delegados com quatro dias sendo jornalistas que trabalham para grandes jornais: o The New York Times, o The Guardian e como não poderia faltar, o Nexo Jornal.",
+        "Dentre os dias de simulação, os delegados se dividirão para cobrir os cinco comitês de debate, lembrando que comitês em inglês terão sua cobertura feita exclusivamente na língua estrangeira. Serão produzidos todos os dias: um texto sobre a situação do comitê, uma nota sobre alguma situação inédita do comitê e algum outro texto de gênero livre.",
+        "A Imprensa também conta com outras atividades especiais que serão realizadas pelos próprios jornalistas: uma coletiva de imprensa com cada comitê e a produção de um telejornal!"
+    ];
+
+    pagina.diretores = [
+        {
+            nome: "Luana Rodrigues Gotardo",
+            cargo: "Diretora acadêmica",
+            descricao: [
+                "Aspirante de escritora desde que se entende por gente, Luana é apaixonada por escrever e compartilhar histórias. Após experimentar o mundo de simulações, percebeu que, por mais que adorasse o ambiente dos MUNs, não se identificava na cena dos debates. Ao descobrir a imprensa na simulação interna de seu colégio, o ABACOONU, se estabeleceu sem intenções de abandonar o comitê: simulou em três anos consecutivos, um como jornalista, quando ganhou menção de melhor jornalista, e outras duas como diretora. Além disso, já participou da SiEM como membro da diretoria de intervenção.",
+                "Atualmente, Luana cursa o segundo semestre de jornalismo na Faculdade Cásper Líbero, e busca uma imprensa de força, influência e qualidade. Essa é a primeira simulação universitária que participa, e está bastante feliz em participar da história da USPMUN na primeira imprensa e primeira mesa completamente feminina da simulação.",
+                "Além disso, espera que os jornalistas aproveitem a experiência na simulação, e está bastante ansiosa em ver como eles lidarão com o comitê, ao trazer os debates realizados com os pontos de vista de suas representações jornalísticas."
+            ]
+        },
+        {
+            nome: "Larissa Mazzei de La Corte Machado",
+            cargo: "Diretora assistente",
+            descricao: [
+                "Uma das inúmeras paixões de Larissa é compartilhar tudo o que gosta e a faz feliz com o mundo, talvez esse seja um dos motivos do porquê ela escolheu Jornalismo. Já a paixão por simulações começou um pouco antes, quando nem ela mesma sabia o que queria ser da vida. Foi arremessada no mundo de simulações aos 15 anos, na simulação interna de seu antigo colégio, a SICM, e depois dali não parou mais. Por dois anos consecutivos, seguiu como organizadora geral e diretora acadêmica da SICM. Entre 2016 e 2017, participou do comitê de imprensa do Fórum FAAP, conquistando menção honrosa e menção oral.",
+                "Larissa decidiu cursar Jornalismo na Faculdade Cásper Líbero, fruto da realização que sentiu após participar de comitês de imprensa, e deseja que essa seja mais uma realização. Após o período de simulações do Ensino Médio, está pronta para participar de sua primeira simulação universitária e espera vivenciar, junto com os delegados, essa nova fase cheia de expectativas e dúvidas, que serão sanadas ao longo do processo. Deseja que o ambiente de simulação seja inclusivo, encorajador e desafiador, e garante que dará o seu melhor para isso acontecer e fará jus ao título de “primeira mesa completamente feminina”, fazendo história na USPMUN 2018."
+            ]
+        }
+    ];
 
     res.render("comite-shell", { content: pagina });
 });
