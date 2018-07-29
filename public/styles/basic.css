@@ -356,3 +356,7 @@ a:hover{
 	background-color: #55C4E0;
 	color: #FFF;
 }    
+
+.bold {
+    font-weight: 550;
+}
