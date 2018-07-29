@@ -289,11 +289,61 @@ app.get("/prb", function (sol, res) {
 app.get("/embraer", function (sol, res) {
     pagina = {};
     pagina.title = "Embraer";
+    pagina.subtitle = [
+        "Apertem o cinto, privatizaram a Embraer:",
+        "Negociações de venda da maior empresa aeronáutica da América Latina"
+    ];
+
+    pagina.paragraphs =[
+        "Os anos 90 trouxeram grandes mudanças à economia brasileira, e as empresas estabelecidas no país entraram no jogo para sobreviver às dificuldades econômicas. Gigante do mercado aeronáutico internacional.",
+        "Forte e consolidada no mercado mundial, a empresa se estabeleceu ao longo das décadas como uma empreitada de sucesso do Estado brasileiro. No entanto, a conjuntura política e econômica do Brasil trouxe à tona uma possibilidade para alavancar o potencial da Embraer: o fim do controle estatal em favor da privatização de suas atividades.",
+        "No USPMUN, os delegados representantes deste comitê terão de lidar com os principais desafios da privatização e agir da melhor maneira possível para os interesses da empresa - , considerando obstáculos judiciais, estratégicos e econômicos que seriam vitais para a sobrevivência da Embraer em um setor fortemente competitivo e sedento por inovação. permearam a questão, O estabelecimento de visando sucedê-la, estabelecendo diretrizes positivas para o sucesso futuro da companhia será o principal objetivo, decidindo o quão disposto o governo brasileiro está em compartilhar deste tesouro nacional com o mundo.",
+        "Neste comitê, os delegados terão de lidar com os principais desafios da privatização e agir da melhor maneira possível para os interesses da empresa - considerando obstáculos judiciais, estratégicos e econômicos que seriam vitais para a sobrevivência da Embraer em um setor fortemente competitivo e sedento por inovação. O estabelecimento de diretrizes positivas para o sucesso futuro da companhia será o principal objetivo, decidindo o quão disposto o governo brasileiro está em compartilhar deste tesouro nacional com o mundo."
+    ];
 
     pagina.diretores = [
         {
+            nome: "Eduardo Estivalete",
+            cargo: "Diretor Acadêmico",
+            descricao: [
+                "Olá, pessoal! Meu nome é Eduardo Azevedo. Tenho 19 anos, e hoje curso direito (após 2 anos de engenharia). Moro na maior selva de pedra da América Latina, e não me imagino saindo daqui de novo tão cedo.",
+                "Meu interesse pelo tema do comitê foi instantâneo: desde a minha paixão por máquinas até o meu profundo respeito pela referência internacional que a Embraer é na produção de aeronaves.",
+                "Simulações fizeram (e continuam a fazer) uma parte importantíssima ao longo de minha vida acadêmica. Por meio de comitês como esse, eu espero que os delegados possam sentir a mesma magia que eu sinto ao discutir temas tão interessantes e relevantes para a sociedade atual.",
+                "Espero ansiosamente pela participação de vocês nesse grandioso evento que é o USPMUN!"
+            ]
+        },
+        {
+            nome: "Pedro Alaminos",
+            cargo: "Diretor Acadêmico",
+            descricao: [
+                "Olá! Meu nome é Pedro Alaminos Gonçalves, e atualmente sou aluno do 4º semestre de Direito na FGV-SP!",
+                "Meu interesse por simulações em geral surgiu durante o ensino médio, quando amigos meus sugeriram que participasse. Com 5 anos de experiência em eventos do tipo, posso afirmar com toda a certeza que eles estão as principais fontes de desenvolvimento acadêmico com que tive contato.",
+                "O tema do nosso comitê também é da maior importância: não só traz a reflexão do papel do Estado no desenvolvimento econômico de um país, como coloca os delegados como membros de alto escalão de uma das maiores empresas do país, fugindo com a \"mesmice\" de muitas simulações que só tratam do modelo Nações Unidas e trazendo maior compreensão do real funcionamento de grandes companhias.",
+                "Espero contar com vocês nesse grande evento que é o USPMUN!"
+            ]
+        },
+        {
+            nome: "Amanda Lopes",
+            cargo: "Diretora de Intervenção",
+            descricao: [
+                "Amanda Lopes é ingressante no curso de Engenharia Elétrica da Escola Politécnica da Universidade de São Paulo.",
+                "Seu interesse pelas MUN's despertou no começo do ensino médio, quando foi apresentada a um projeto de simulação da região. Depois de participar de sua primeira MUN, com a ajuda de colegas ela estruturou um projeto para trazer as simulações para seu ambiente escolar, tendo realizado, com sucesso, a primeira edição em maio de 2017.",
+                "Além da paixão pelos debates, Amanda divide seu tempo livre (escassíssimo nesse primeiro ano de poli) entre a prática de esportes, séries e ( festinhas ) outros projetos extracurriculares da universidade."
+            ]
+        },
+        {
+            nome: "Vinícius Amaral",
+            cargo: "Diretor de Intervenção",
+            descricao: [
+                "Vinícius Amaral é estudante do primeiro ano de Engenharia Elétrica da Escola Politécnica da USP.",
+                "Além de um comum calouro de engenharia, Vinícius compartilha do gosto por modelos de simulação da ONU, debates políticos e esportes. Seu lado afastado do mundo peculiar das ciências exatas se entrelaça com os domínios da arte e desfruta das belezas da fotografia, seja ela de campo ou estúdio.",
+                "No que completa seu tempo livre, Vinícius admira um bom futebol e se aventura na simples porém fascinante culinária brasileira e desafia suas restritas habilidades na cozinha.",
+                "Anteriormente, vivenciou experiências únicas participando como delegado em simulações externas e internas, e se empenhando durante 5 vezes na organização do Polionu, maior simulação estudantil da América Latina. Esse ano, contudo, espera ansiosamente recebê-los nesse incrível experiência que será o USPMUN 2018.",
+            ]
+        },
+        {
             nome: "Filipe Penna",
-
+            cargo: "Diretor de Intervenção",
             descricao: [
                 "Filipe Penna. Penna. Peninha. Natural da capital do Vale São José dos Campos, tenho 18 anos e, ainda que paulista, encontro minhas raízes familiares e culturais em Minas, onde meu profundo amor, o Galo forte lutador, trava suas batalhas.",
                 "Faço Poli, Engenharia Elétrica. Tento, também, fazer algumas outras coisas e com autenticidade, dedicação, um pouco de ironia e um bom senso de humor tento coordenar minha vida. Quase nunca no piloto automático, me inspiro em grandes referências pra continuar minha jornada como Elon Musk, Michael Faraday, Nikolas Tesla e Renan do Towner azul bebê.",
