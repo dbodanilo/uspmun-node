@@ -270,6 +270,10 @@ h4.secretário{
     max-height: 50vh;
 }
 
+.comite-descricao {
+    max-width: 50vh;
+}
+
 /* Parceiros */
 .img-patro {
     max-height: 20vh;
