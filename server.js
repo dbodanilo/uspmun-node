@@ -105,7 +105,7 @@ app.get("/comites", function (sol, res) {
     });
 });
 
-app.get("/inscricao/delegado", function (sol, res) {
+app.get("/delegado", function (sol, res) {
     pagina = {};
     pagina.title = "Inscrição";
 
@@ -120,7 +120,7 @@ app.get("/inscricao/delegado", function (sol, res) {
     });
 });
 
-app.get("/inscricao/chefe", function (sol, res) {
+app.get("/delegacao", function (sol, res) {
     pagina = {};
     pagina.title = "Inscrição";
 
@@ -290,6 +290,18 @@ app.get("/embraer", function (sol, res) {
     pagina = {};
     pagina.title = "Embraer";
 
+    pagina.diretores = [
+        {
+            nome: "Filipe Penna",
+
+            descricao: [
+                "Filipe Penna. Penna. Peninha. Natural da capital do Vale São José dos Campos, tenho 18 anos e, ainda que paulista, encontro minhas raízes familiares e culturais em Minas, onde meu profundo amor, o Galo forte lutador, trava suas batalhas.",
+                "Faço Poli, Engenharia Elétrica. Tento, também, fazer algumas outras coisas e com autenticidade, dedicação, um pouco de ironia e um bom senso de humor tento coordenar minha vida. Quase nunca no piloto automático, me inspiro em grandes referências pra continuar minha jornada como Elon Musk, Michael Faraday, Nikolas Tesla e Renan do Towner azul bebê.",
+                "Minha paixão por simulações começou em 2015, quando tive minha primeira experiência com uma MUN. Venho diretamente do PoliONU, 3 anos depois, após de duas edições como Diretor nele, procurar oferecer uma nova experiência de simulação que eu espero que seja, pra mim e pros demais participantes, novamente inesquecível. Caso queira discutir comigo qualquer aspecto do comitê ou relacionado ao transporte alternativo brasileiro, sinta-se à vontade para enviar mensagens a filipe.penna.soares@gmail.com ou me procurar no Facebook."
+            ]
+        }
+    ]
+
     res.render("comite-shell", { content: pagina });
 });
 
@@ -334,6 +346,53 @@ app.get("/ce", function (sol, res) {
 app.get("/oea", function (sol, res) {
     pagina = {};
     pagina.title = "OEA";
+    pagina.subtitle = [
+        "Una nación, múltiples problemas:",
+        "A crise migratória da Venezuela e as discussões sobre a suspensão da República Bolivariana da Venezuela"
+    ];
+
+    pagina.paragraphs = [
+        "A Organização dos Estados Americanos é o principal órgão para integração continental nas Américas. Ela integra todos os países independentes do território americano e toma decisões de caráter recomendatório. Hoje, a OEA congrega os 35 Estados independentes das Américas e constitui o principal fórum governamental político, jurídico e social do Hemisfério. Fundada em 1948, ela comemora, este ano, seu octagésimo aniversário. A Organização foi criada para alcançar nos Estados membros, como estipula o Artigo 1º da Carta, “uma ordem de paz e de justiça, para promover sua solidariedade, intensificar sua colaboração e defender sua soberania, sua integridade territorial e sua independência”.",
+        "O comitê tratará sobre a questão da crise imigratória que atualmente atinge a Venezuela, com milhares de venezuelanos deixando o país por mês. A nação vive um cenário sem perspectivas, onde o governo cortou programas sociais, a inflação nas alturas e rotina de escassez de alimentos e medicamentos. As discussões a respeito de suspender a República Bolivariana da Venezuela de sua posição na OEA também entrarão em pauta, pelos indícios de infração de direitos humanos e regras do órgão. As tarefas no comitê são muitas e variadas, cabendo aos delegados encaminhar medidas que possam cessar a tensão diplomática e instabilidade imigratória."
+    ];
+
+    pagina.diretores = [
+        {
+            nome: "Amanda Louzada",
+            cargo: "Diretora Acadêmica",
+            descricao: [
+                "Amanda Louzada, ou só (L)ouzada mesmo, faz letras na USP e não sabe se escolhe sua habilitação em Alemão ou Russo. Apesar de estudar na famosa FFLCH, jura que nunca usou drogas (na mesma). A aquariana já passou por todas as fases que um modeleiro pode passar, desde estresse total como Secretária, até uma Narcotraficante da Colômbia. Conhecida como golpista nas simulações, ela sempre dá um jeitinho de agitar todos os comitês que participa, mas promete se comportar em mais uma de suas experiências como diretora. Amante de livros e diplomacia, seu maior sonho é ser poliglota, o resto só vem. Fez teatro musical sua vida inteira, então estejam preparados para invenções tops."
+            ]
+        },
+        {
+            nome: "Anna Júlia",
+            cargo: "Diretora Assistente",
+            descricao: [
+                "Anna é uma pseudo comunista que está se achando, pois iniciou seus estudos em direito na USP em 2018. Vale dizer que é uma garota prendada, chata, às vezes simpática, maluca, ansiosa e que ama política e pessoas engajadas. Apesar de ser uma amante de memes, descobrirão, em breve, que a graça não é seu forte, e por isso essa introdução não está sendo escrita por ela, mas sim pela sua fã número 1. Geralmente não presta atenção no que os outros falam, porém, por incrível que pareça, tem o superpoder de focar dentro de uma sala de comitê. Talvez seja por conta dessa vantagem apelona sobre os meros mortais que obteve vitoriosas experiências no ramo das simulações. A leonina promete não deixar que sua teimosia afete a vivência de vocês jornalistas. Entretanto, não deixem de ser cautelosos perto dela, já que seu ascendente é em escorpião e ela pode ser facilmente irritada."
+            ]
+        },
+        {
+            nome: "Bruno Fiorelli",
+            cargo: "Diretor Assistente",
+            descricao: [
+                "Bruno Fiorelli é um indivíduo viciado em simulações. Geógrafo da USP e exímio duelista de Yu-Gi-Oh (quem quiser duelar é só chamar para um x1), seu objetivo de vida sempre foi pegar todos os 151 pokémons e tornar-se o melhor treinador da região de Kanto. Mesmo sendo um crianção, ainda considera importantíssima a participação e engajamento de pessoas e jovens com este tipo de atividade, além de perceber o quanto as pessoas podem mudar e inspirar os outros! Bruno também pode ser conhecido como “Mr. Fórum” e futuramente poderá ser avistado em seu habitat natural, as outras simulações de São Paulo."
+            ]
+        },
+        {
+            nome: "Ítalo Martins",
+            cargo: "Diretor Assistente",
+            descricao: [
+                "Ítalo Martins tem 18 anos e cursa o primeiro semestre de Direito na USP. É amante inveterado de política e intrigas e, por conseguinte, de House of Cards e simulações nas quais já participou em torno de 15 vezes, já tendo perdido a conta. Apesar de se caracterizar como um ser calmo em seu habitat natural, não hesita em encarnar o deus nórdico quando do manuseio do malhete. Cético da inviolabilidade da teoria astrológica dos signos, por meio dessa apresentação convoca os experts para um bolão na tentativa de acertar o seu signo. Sua fala nas sessões, normalmente mais sóbria e formal há de oferecer risadas diversas ao longo do desenrolar do comitê em momentos de necessária descontração cômica."
+            ]
+        },
+        {
+            nome: "Mariana Rocha",
+            cargo: "Diretora Assistente",
+            descricao: [
+                "Mariana Rocha é a famosa mãezona do rolê, apesar de ainda ser, no quesito idade, um bebê. Estudante de Psicologia do -não tão- famigerado IPUSP, é apaixonada por ajudar as pessoas (chama no probleminha pra falar de probleminhas, bb) e possui uma das maiores coleções de meme que o mundo já viu. Começou a simular aos 14 anos e, como qualquer viciada que se preze, sempre diz que vai parar (\"é minha simulação de despedida\", diz ela há dois anos). Vê os fóruns como boas oportunidades de aprender a dialogar e, principalmente, de aprender a escutar o outro. Espera que todos tenham uma ótima experiência no USPMUN!"
+            ]
+        }
+    ];
 
     res.render("comite-shell", { content: pagina });
 });
