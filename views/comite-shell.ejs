@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<!--  -->
+<!-- COMEÇA O INDEX-SHELL -->
+<!--  -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="marca_azul.ico" rel="shortcut icon">
+
+	<!-- essas tags só fazem sentido quando o site estiver online, para a indexação pelo Google/Bing, etc. -->
+	<!-- <meta name="keywords" content="USPMUN, Model United Nations, Universidade de São Paulo"> -->
+	<!-- <meta name="description" content="text"> -->
+	<!-- <meta name="author" content="text"> -->
+
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+
+	<!-- sugiro que todo o estilo fique aqui, ainda não configurei pra um estilo por página -->
+	<link href="basic.css" rel="stylesheet" type="text/css">
+
+	<script defer src="/fa/js/all.js"></script>
+
+	<style>
+		/* Pra testes temporários de layout, sugiro usar esse espaço, depois passar o final pro basic.css */
+	</style>
+
+	<%=content.style %>
+
+		<title>USPMUN |
+			<%=content.title %>
+		</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg fixed-top bg-translucido outer-nav">
+			<a href="/index" class="navbar-brand">
+				<img class="img-fluid bar-logo" src="logo_branco-horizontal_mid.png" alt="Logo USPMUN">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar">
+				<i class="fas fa-bars"></i>
+			</button>
+
+			<div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="main-navbar">
+				<ul class="navbar-nav mt-2">
+					<li class="nav-item">
+						<a href="/sobre" class="nav-link">SOBRE</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/edicao" class="nav-link">EDIÇÃO</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/comites" class="nav-link">COMITÊS</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/inscricao" class="nav-link">INSCRIÇÕES</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/parcerias" class="nav-link">PARCERIAS</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/duvidas" class="nav-link">FAQ</a>
+					</li>
+
+					<!-- Usa a solução do próprio Bootstrap pra dropdowns -->
+					<!-- <li class="nav-item mx-2 dropdown">
+						<button class="btn dropdown-toggle" id="btnEdicao" type="button" data-toggle="dropdown">
+							<a href="/edicao">Edição</a>
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="/edicao">Cronograma</a>
+							<a class="dropdown-item" href="/edicao">Edição 2018</a>
+							<a class="dropdown-item" href="/edicao">Secretariado</a>
+						</div>
+					</li> -->
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!--  -->
+	<!-- PRIMEIRO FIM DO INDEX-SHELL -->
+	<!--  -->
+
+	<section id="page-body" class="d-none m-0 p-0">
+		<div class="cover">
+			<img src="images/cidade_de_sampa-azul_1920.jpg">
+		</div>
+
+		<section class="primeiro page-title-area">
+			<div class="text-center page-title">
+				<h1>
+					<%=content.title %>
+				</h1>
+			</div>
+			<section class="text-center page-subtitle">
+				<h3>
+					<%=content.subtitle %>
+				</h3>
+			</section>
+
+			<hr />
+
+		</section>
+
+		<section>
+
+			<div class="container" id="comite-content">
+				<h2 class="titulo-texto">SOBRE O COMITÊ E O TEMA</h2>
+				<%if(content.paragraphs) { %>
+				<%for(i = 0; i < content.paragraphs.length; i++) { %>
+				<p><%=content.paragraphs[i] %></p>
+				<%} %>
+				<%} %>
+				
+				<div class="row diretors-comitee">
+					<div class="col-md-6 center">
+						<div class="container center">
+							<div class="text-center buttao-area">
+								<button input="button" class="btn btn-info btn-lg">Guia de Estudos</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 center">
+						<div class="container center">
+							<div class="text-center buttao-area">
+								<button input="button" class="btn btn-info btn-lg">Guia de Regras</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<!-- 
+		<section>
+			<div class="container">
+				<h2 class="center">VÍDEOS</h2>
+				<div class="row diretors-comitee">
+					<div class="col-md-6 center">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/s5JF89Ayzyg" frameborder="0" allow="autoplay; encrypted-media"
+						 allowfullscreen></iframe>
+					</div>
+					<div class="col-md-6 center">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/s5JF89Ayzyg" frameborder="0" allow="autoplay; encrypted-media"
+						 allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		<hr>
+
+		 -->
+
+		<!--Modelo duo
+		<section>
+			<div class="container">
+				<h2 class="center">DIRETORES</h2>
+				<div class="row diretors-comitee">
+					<div class="col-md-6 center">
+						<h4 class="nomeSecretario">Andrei Dias</h4>
+						<h6 class="cargoSecretario"> - Função dele</h6>
+						<p>Model United Nations, also known as Model UN or MUN, is an educational simulation and/or academic activity in which
+							students can learn about diplomacy, international relations, and the United Nations. MUN involves and teaches participants
+							researching, public speaking, debating, and writing skills, in addition to critical thinking, teamwork, and leadership
+							abilities. Usually an extracurricular activity, some schools also offer Model UN as a class. It is meant to engage
+							students and allow them to develop deeper understanding into current world issues.</p>
+					</div>
+					<div class="col-md-6 center">
+						<h4 class="nomeSecretario">Andrei Dias</h4>
+						<h6 class="cargoSecretario"> - Função dele</h6>
+						<p>Participants in Model United Nations conferences, known as delegates, are placed in committees and assigned countries
+							to represent, or occasionally other organizations or political figures, where they represent members of that body.
+							They are presented with their assignments in advance, along with a topic or topics that their committee will discuss.
+							Delegates conduct research before conferences and formulate positions that they will then debate with their fellow
+							delegates in the committee, staying true to the actual position of the member they represent. At the end of a conference,
+							the best-performing delegates in each committee, as well as delegations, are sometimes recognized with awards.</p>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="container center">
+				<div class="text-center buttao-area">
+					<a href="/secretariado" class="btn btn-info btn-lg">Conheça o Secretariado</a>
+				</div>
+			</div>
+		</section>
+		-->
+
+		<!--Modelo trio-->
+		<section>
+			<div class="container">
+				<h2 class="center">DIRETORES</h2>
+				<div class="row diretors-comitee">
+				<%if(content.diretores) {%>
+					<%for (i = 0; i < content.diretores.length; i++) { %>
+						<%if(content.diretores.length % 2 === 0) { %>
+							<div class="col-md-6 center">
+						<%} else { %>
+							<div class="col-md-4 center">
+						<%} %>						
+							<h4 class="nomeSecretario"> <%=content.diretores[i].nome %></h4>
+							<h6 class="cargoSecretario"> - <%=content.diretores[i].cargo %></h6>
+							<%for (j = 0; j < content.diretores[i].descricao.length; j++) { %>
+								<p><%=content.diretores[i].descricao[j] %></p>
+							<%} %>
+						</div>
+					<%} %>
+				<%} %>
+				</div>
+			</div>
+			</div>
+			<div class="container center">
+				<div class="text-center buttao-area">
+					<a href="/secretariado" class="btn btn-info btn-lg">Conheça o Secretariado</a>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<!--  -->
+	<!-- RECOMEÇA O INDEX-SHELL -->
+	<!--  -->
+
+	<footer class="d-flex text-center">
+		<div class="footer-content center">
+			<div class="redes-sociais d-flex justify-content-between">
+				<a class="social btn-link" href="https://www.facebook.com/uspmun">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a class="social" href="https://www.instagram.com/">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a class="social" href="https://www.youtube.com/">
+					<i class="fab fa-youtube"></i>
+				</a>
+			</div>
+			<br/>
+			<h6 class="d-block text-center">
+				<small>&copy; Universidade de São Paulo Model United Nations</small>
+			</h6>
+		</div>
+	</footer>
+
+	<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+	 crossorigin="anonymous"></script> -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script> -->
+
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script> -->
+
+	<script src="/bootstrap/js/popper.min.js"></script>
+	<script src="/bootstrap/js/jquery-3.3.1.slim.js"></script>
+	<script src="/bootstrap/js/bootstrap.min.js"></script>
+
+	<%=content.script %>
+
+		<script>
+			// não alterar esse script, é ele que renderiza o conteúdo no layout.
+			var $page;
+			var data;
+			var content;
+
+			$(function () {
+				$page = $("#page-body");
+				data = $page.html();
+
+				while (data.indexOf("&lt;") >= 0) {
+					data = data.replace("&lt;", "<");
+					data = data.replace("&gt;", ">");
+				}
+
+				content = $.parseHTML(data);
+
+				$page.html(content);
+				$page.removeClass("d-none");
+			});
+			// fim de onde não pode alterar
+
+		</script>
+</body>
+
+<!--  -->
+<!-- FIM REAL DO INDEX-SHELL -->
+<!--  -->
+
+</html>

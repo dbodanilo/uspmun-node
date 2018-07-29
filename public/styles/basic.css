@@ -44,7 +44,7 @@ p {
 }
 
 p, .titulo-texto, dl {
-    padding: 2vw 5vw 0 5vw;
+    margin-bottom: 1em;
     max-width: 90vw;
 }
 
@@ -101,7 +101,7 @@ nav {
 }
 
 #index-cover {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .navbar-brand {
@@ -239,7 +239,7 @@ h4.secretário{
 
 .cargoSecretario {
     text-align: right;
-    padding: 0 5vw;
+    padding: 0;
 	color:#D3D3D3;
 }
 
@@ -252,8 +252,8 @@ h4.secretário{
 
 /* Comitês */
 .comite {
-    padding: 1em 0;    
-	margin-bottom: 3vh;
+    padding: 1em;
+    margin-bottom: 3vh;
 }
 
 .comite:hover{
@@ -263,6 +263,7 @@ h4.secretário{
 
 .titulo-comite {
     padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 
 /* Parceiros */
@@ -309,17 +310,16 @@ a:hover{
 .page-title-area {
 	position: relative;
 }
-.page-title {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
 
 .trio{
 	padding:2vw 0 0 0;
 }
 .diretors-comitee{
 	margin-top: 2vw;
+}
+
+#comite-content {
+    padding-top: 10vh;
 }
 
 .primeiro2 {
