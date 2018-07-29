@@ -105,35 +105,35 @@ app.get("/comites", function (sol, res) {
     });
 });
 
-app.get("/delegado", function (sol, res) {
-    pagina = {};
-    pagina.title = "Inscrição";
+// app.get("/delegado", function (sol, res) {
+//     pagina = {};
+//     pagina.title = "Inscrição";
 
-    fs.readFile("./public/pages/inscricao-content.html", "utf-8", function (err, data) {
-        if (err) {
-            res.render("error-shell", { erro: err });
-        }
-        else {
-            pagina.body = data;
-            res.render("index-shell", { content: pagina });
-        }
-    });
-});
+//     fs.readFile("./public/pages/inscricao-content.html", "utf-8", function (err, data) {
+//         if (err) {
+//             res.render("error-shell", { erro: err });
+//         }
+//         else {
+//             pagina.body = data;
+//             res.render("index-shell", { content: pagina });
+//         }
+//     });
+// });
 
-app.get("/delegacao", function (sol, res) {
-    pagina = {};
-    pagina.title = "Inscrição";
+// app.get("/delegacao", function (sol, res) {
+//     pagina = {};
+//     pagina.title = "Inscrição";
 
-    fs.readFile("./public/pages/inscricao-content.html", "utf-8", function (err, data) {
-        if (err) {
-            res.render("error-shell", { erro: err });
-        }
-        else {
-            pagina.body = data;
-            res.render("index-shell", { content: pagina });
-        }
-    });
-});
+//     fs.readFile("./public/pages/inscricao-content.html", "utf-8", function (err, data) {
+//         if (err) {
+//             res.render("error-shell", { erro: err });
+//         }
+//         else {
+//             pagina.body = data;
+//             res.render("index-shell", { content: pagina });
+//         }
+//     });
+// });
 
 app.get("/inscricoes", function (sol, res) {
     pagina = {};
