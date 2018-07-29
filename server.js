@@ -10,6 +10,8 @@ var app = express();
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
+
+app.use(express.static("./public"));
 app.use(express.static("./public/styles"));
 app.use(express.static("./public/scripts"));
 app.use(express.static("./public/logos"));
@@ -103,11 +105,41 @@ app.get("/comites", function (sol, res) {
     });
 });
 
-app.get("/inscricao", function (sol, res) {
+app.get("/inscricao/delegado", function (sol, res) {
     pagina = {};
     pagina.title = "Inscrição";
 
     fs.readFile("./public/pages/inscricao-content.html", "utf-8", function (err, data) {
+        if (err) {
+            res.render("error-shell", { erro: err });
+        }
+        else {
+            pagina.body = data;
+            res.render("index-shell", { content: pagina });
+        }
+    });
+});
+
+app.get("/inscricao/chefe", function (sol, res) {
+    pagina = {};
+    pagina.title = "Inscrição";
+
+    fs.readFile("./public/pages/inscricao-content.html", "utf-8", function (err, data) {
+        if (err) {
+            res.render("error-shell", { erro: err });
+        }
+        else {
+            pagina.body = data;
+            res.render("index-shell", { content: pagina });
+        }
+    });
+});
+
+app.get("/inscricoes", function (sol, res) {
+    pagina = {};
+    pagina.title = "Inscrições";
+
+    fs.readFile("./public/pages/inscricoes-content.html", "utf-8", function (err, data) {
         if (err) {
             res.render("error-shell", { erro: err });
         }
@@ -264,6 +296,37 @@ app.get("/embraer", function (sol, res) {
 app.get("/ce", function (sol, res) {
     pagina = {};
     pagina.title = "CE";
+    pagina.subtitle = [
+        "Xeque-mate do Artigo 50:",
+        "O futuro das relações econômicas pós-Brexit e a questão da fronteira entre as Irlandas"
+    ];
+
+    pagina.paragraphs = [
+        "Em 23 de Junho de 2016 a população britânica decidiu, em um histórico referendo, por separar seu país do maior bloco político-econômico de Estados já formado - a União Europeia.",
+        "Contudo, a separação não é uma atitude simples de ser tomada. As realidades político-econômicas do Reino Unido e da União Europeia se encontram profundamente interligadas após décadas de União.",
+        "A saída britânica do bloco europeu envolve, portanto, uma série de negociações para decidir sobre os mais diversos assuntos, desde o futuro das relações entre os dois entes, passando pela realocação de instituições do bloco instaladas nas Ilhas Britânicas, até a situação dos cidadãos europeus residentes no país e os cidadãos britânicos residentes na Europa Continental.",
+        "O Comitê busca, por meio de discussões entre os delegados, buscar resoluções que possam guiar as negociações de saída do Reino Unido, priorizando os temas da futura relação econômica entre os atores e a questão da fronteira entre as Irlandas."
+    ];
+
+    pagina.diretores = [
+        {
+            nome: "Matheus Rodrigues",
+            cargo: "Diretor Assistente",
+            descricao: [
+                "​Hallo, Leute! Eu me chamo Matheus Rodrigues e terei o prazer de ser um dos Diretores do Conselho Europeu. Tenho 23 anos e estou no terceiro ano do curso de Relações Internacionais na Usp.",
+                "Algumas informações importantes sobre minha pessoa: Costumo ser meio ranzinza à primeira vista e sou bem acanhado, mas juro que sou bem legal, então conversem comigo; tenho uma paixão não tão secreta por Video Games (Games Matter!); e sou apaixonado por cães."
+            ]
+        },
+        {
+            nome: "Gabriel Rosas",
+            cargo: "Diretor Assistente",
+            descricao: [
+                "Hello gente, meu nome é Gabriel Rosas, mais conhecido como Grosas, estou cursando o terceiro ano de Relações internacionais na USP. Tenho 22 anos com alma de 15 e coluna de 70.",
+                "Famoso por meu pique eterno para roles e ideias duvidosas de diversão, serei diretor do comitê do CE. Gosto muito de música e odeio ficar sozinho.",
+                "Para me definir em uma palavra, eu usaria comunicativo pois sempre estou conversando com as pessoas e fazendo novas amizades. #tamojunto"
+            ]
+        }
+    ];
 
     res.render("comite-shell", { content: pagina });
 });
