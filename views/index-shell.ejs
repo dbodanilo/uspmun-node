@@ -10,24 +10,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="marca_azul.ico" rel="shortcut icon">
 
-	<!-- essas tags só fazem sentido quando o site estiver online, para a indexação pelo Google/Bing, etc. -->
-	<!-- <meta name="keywords" content="USPMUN, Model United Nations, Universidade de São Paulo"> -->
-	<!-- <meta name="description" content="text"> -->
-	<!-- <meta name="author" content="text"> -->
+	<meta name="keywords" content="USPMUN, Model United Nations, Universidade de São Paulo"> -->
+	<meta name="description" content="">
+	<meta name="author" content="A USPMUN é o Modelo de Simulação das Nações Unidas da Universidade de São Paulo que possui o objetivo de trazer para o
+			ambiente acadêmico discussões atuais do sistema internacional, como as temáticas de Segurança Internacional, Comércio
+			Internacional, Direitos Humanos e Meio Ambiente, e de estimular a prática de negociação e solução de controvérsias de
+			modelo cooperativo e empático.">
 
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-	crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 
-
-	<!-- sugiro que todo o estilo fique aqui, ainda não configurei pra um estilo por página -->
 	<link href="basic.css" rel="stylesheet" type="text/css">
 
 	<script defer src="/fa/js/all.js"></script>
-
-	<style>
-		/* Pra testes temporários de layout, sugiro usar esse espaço, depois passar o final pro basic.css */
-	</style>
 
 	<%=content.style %>
 
@@ -71,18 +65,6 @@
 					<li class="nav-item">
 						<a href="/duvidas" class="nav-link">FAQ</a>
 					</li>
-
-					<!-- Usa a solução do próprio Bootstrap pra dropdowns -->
-					<!-- <li class="nav-item mx-2 dropdown">
-						<button class="btn dropdown-toggle" id="btnEdicao" type="button" data-toggle="dropdown">
-							<a href="/edicao">Edição</a>
-						</button>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="/edicao">Cronograma</a>
-							<a class="dropdown-item" href="/edicao">Edição 2018</a>
-							<a class="dropdown-item" href="/edicao">Secretariado</a>
-						</div>
-					</li> -->
 				</ul>
 			</div>
 		</nav>
@@ -134,7 +116,6 @@
 	<%=content.script %>
 
 		<script>
-			// não alterar esse script, é ele que renderiza o conteúdo no layout.
 			var $page;
 			var data;
 			var content;
@@ -153,8 +134,6 @@
 				$page.html(content);
 				$page.removeClass("d-none");
 			});
-			// fim de onde não pode alterar
-
 		</script>
 </body>
 
