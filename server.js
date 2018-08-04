@@ -180,20 +180,20 @@ app.get("/duvidas", function (sol, res) {
     });
 });
 
-app.get("/comiteSample", function (sol, res) {
-    pagina = {};
-    pagina.title = "OCA";
+// app.get("/comiteSample", function (sol, res) {
+//     pagina = {};
+//     pagina.title = "OCA";
 
-    fs.readFile("./public/pages/comiteSample-content.html", "utf-8", function (err, data) {
-        if (err) {
-            res.render("error-shell", { erro: err });
-        }
-        else {
-            pagina.body = data;
-            res.render("index-shell", { content: pagina });
-        }
-    });
-});
+//     fs.readFile("./public/pages/comiteSample-content.html", "utf-8", function (err, data) {
+//         if (err) {
+//             res.render("error-shell", { erro: err });
+//         }
+//         else {
+//             pagina.body = data;
+//             res.render("index-shell", { content: pagina });
+//         }
+//     });
+// });
 
 app.get("/unsc", function (sol, res) {
     pagina = {};
@@ -232,6 +232,21 @@ app.get("/unsc", function (sol, res) {
             descricao: [
                 "Hello, I am Lucas Motta Moreira, I am 18 years old and I come from São Bernardo do Campo. My hobbies and activities are different of the interests of the other directors, starting by the fact that I like math and chemistry, which takes me to study chemistry engineering at University of São Paulo. I am also a great fan of sport, I like most of them, although I am not good playing any of them, about sport, the things that probably like most are the tactics behind the game and how they influence the society and the political relations.",
                 "The convergent point between me and the others members of the chair is the MUN, we all knew it during our high school and since then started to participate of that. As a chair joined by the MUN we are going to do our best to join (or not) the delegates on the pursuit of a solution."
+            ]
+        },
+        {
+            nome: "Verena Teles (Veva)",
+            cargo: "Assistant Director",
+            descricao: [
+                "I am Verena Juliana Marigo Teles and I am 18 years old. I currently live in São Bernardo do Campo although I’ve spent most of my childhood in São Paulo and the majority of my family lives there. I hardly ever have some free time, but when I do I spend it reading comics and watching Brooklyn Nine-Nine !",
+                "I’m a student of bachelor degrees in sciences and humanities in UFABC - Universidade Federal Do ABC - and I’m looking forwards to graduate in Foreign Relationships."
+            ]
+        },
+        {
+            nome: "Yuri Peggion",
+            cargo: "Assistant Director",
+            descricao: [
+                "Hello world, how you doing? I’m Yuri de Oliveira Peggion, I am 18 years old and did also come from Sao Bernardo do Campo. My life motto is  \"know a little bit about everything, or at least try to\", that's because it's common enough for me to enter random conversations with random people, so I like to be prepared. On the other hand, my routine is pretty simple, I go to college at Universidade Federal do ABC (by the way, I study economics), I eat and sleep, probably more than I should; I usually spend good part of my day talking to my friends on discord, for that reason I learned how to double task a lot. To sum it all, I'm interested in pretty much everything, especially for History, Politics, Games, and Movies, hope we get along well!",
             ]
         }
     ]
