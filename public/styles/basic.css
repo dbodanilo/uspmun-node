@@ -23,8 +23,7 @@ hr {
 	background-color: #FFF;
 	display: block;
     margin: 0;
-    border-style: inset;
-    border-width: 0.1em;
+    padding-top: 0.01vh;
 }
 
 /* TEXT */
