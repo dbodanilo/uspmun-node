@@ -375,14 +375,14 @@ app.get("/ce", function (sol, res) {
     pagina.title = "CE";
     pagina.subtitle = [
         "Xeque-mate do Artigo 50:",
-        "O futuro das relações econômicas pós-Brexit e a questão da fronteira entre as Irlandas"
+        "O futuro das relações econômicas pós-Brexit e a questão da fronteira entre as Irlandas",
     ];
 
     pagina.paragraphs = [
         "Em 23 de Junho de 2016 a população britânica decidiu, em um histórico referendo, por separar seu país do maior bloco político-econômico de Estados já formado - a União Europeia.",
         "Contudo, a separação não é uma atitude simples de ser tomada. As realidades político-econômicas do Reino Unido e da União Europeia se encontram profundamente interligadas após décadas de União.",
         "A saída britânica do bloco europeu envolve, portanto, uma série de negociações para decidir sobre os mais diversos assuntos, desde o futuro das relações entre os dois entes, passando pela realocação de instituições do bloco instaladas nas Ilhas Britânicas, até a situação dos cidadãos europeus residentes no país e os cidadãos britânicos residentes na Europa Continental.",
-        "O Comitê busca, por meio de discussões entre os delegados, buscar resoluções que possam guiar as negociações de saída do Reino Unido, priorizando os temas da futura relação econômica entre os atores e a questão da fronteira entre as Irlandas."
+        "O Comitê busca, por meio de discussões entre os delegados, buscar resoluções que possam guiar as negociações de saída do Reino Unido, priorizando os temas da futura relação econômica entre os atores e a questão da fronteira entre as Irlandas.",
     ];
 
     pagina.diretores = [
@@ -391,7 +391,7 @@ app.get("/ce", function (sol, res) {
             cargo: "Diretor Assistente",
             descricao: [
                 "​Hallo, Leute! Eu me chamo Matheus Rodrigues e terei o prazer de ser um dos Diretores do Conselho Europeu. Tenho 23 anos e estou no terceiro ano do curso de Relações Internacionais na Usp.",
-                "Algumas informações importantes sobre minha pessoa: Costumo ser meio ranzinza à primeira vista e sou bem acanhado, mas juro que sou bem legal, então conversem comigo; tenho uma paixão não tão secreta por Video Games (Games Matter!); e sou apaixonado por cães."
+                "Algumas informações importantes sobre minha pessoa: Costumo ser meio ranzinza à primeira vista e sou bem acanhado, mas juro que sou bem legal, então conversem comigo; tenho uma paixão não tão secreta por Video Games (Games Matter!); e sou apaixonado por cães.",
             ]
         },
         {
@@ -400,7 +400,18 @@ app.get("/ce", function (sol, res) {
             descricao: [
                 "Hello gente, meu nome é Gabriel Rosas, mais conhecido como Grosas, estou cursando o terceiro ano de Relações internacionais na USP. Tenho 22 anos com alma de 15 e coluna de 70.",
                 "Famoso por meu pique eterno para roles e ideias duvidosas de diversão, serei diretor do comitê do CE. Gosto muito de música e odeio ficar sozinho.",
-                "Para me definir em uma palavra, eu usaria comunicativo pois sempre estou conversando com as pessoas e fazendo novas amizades. #tamojunto"
+                "Para me definir em uma palavra, eu usaria comunicativo pois sempre estou conversando com as pessoas e fazendo novas amizades. #tamojunto",
+            ]
+        },
+        {
+            nome: "Laura Dantas",
+            cargo: "Diretor Assistente",
+            descricao: [
+                "Oioi, sou a Laura Dantas, cursando segundo ano de RI, tenho 19 anos, e sou diretora do CE.",
+                "Adoro uma festinha viu? Mas mais que isso, sair com os friends.",
+                "Serei diretora pela primeira vez e vai ser bem bacana.",
+                "No tempo livre, em casa, é netflix mesmo, o básico (mas eu nunca to em casa)",
+                "Espero vocês no comitê! #pas",
             ]
         }
     ];
