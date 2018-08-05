@@ -154,7 +154,7 @@ nav {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    padding-top: 15vh;
+    padding-top: 25vh;
     width: 100vw;
     height: 100vh;
     background: none;
@@ -234,6 +234,15 @@ h4.secretário{
 } 
 */
 
+.btn-info {
+    background-color: #294551;
+    border: none;
+}
+    .btn-info:hover, .btn-info:active, .btn-info:disabled {
+        background-color: rgba(25, 100, 125, 0.75);
+        box-shadow: none;
+    }
+
 /* Secretariado */
 
 .nomeSecretario {
@@ -296,7 +305,7 @@ dd {
     padding-bottom: 1em;
 }
 
-/* Acressentado */
+/* Acrescentado */
 .comiteButton {
 	text-decoration: none;
 	color: #FFF;
@@ -327,15 +336,6 @@ a:hover{
 }
 .diretors-comitee{
 	margin-top: 2vw;
-}
-
-.primeiro2 {
-    box-sizing: border-box;
-    height: 70vh;
-    padding-top: 15vh;
-    width: 100vw;
-    background: none;
-            
 }
 
 .buttao-area {
