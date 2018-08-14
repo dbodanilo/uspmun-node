@@ -8,6 +8,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-P568L24');</script>
+	<!-- End Google Tag Manager -->
+
 	<link href="marca_azul.ico" rel="shortcut icon">
 
 	<!-- essas tags só fazem sentido quando o site estiver online, para a indexação pelo Google/Bing, etc. -->
@@ -37,6 +49,12 @@
 </head>
 
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P568L24" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
 	<header>
 		<nav class="navbar navbar-expand-lg fixed-top bg-translucido outer-nav">
 			<a href="/index" class="navbar-brand">
@@ -104,10 +122,13 @@
 			</div>
 			<section class="text-center page-subtitle">
 				<%if(content.subtitle) { %>
-				<h3>
-					<em><%=content.subtitle[0] %></em> <%=content.subtitle[1] %>
-				</h3>
-				<%} %>
+					<h3>
+						<em>
+							<%=content.subtitle[0] %>
+						</em>
+						<%=content.subtitle[1] %>
+					</h3>
+					<%} %>
 			</section>
 
 			<hr />
@@ -119,12 +140,14 @@
 			<div class="container" id="comite-content">
 				<h2 class="titulo-texto">SOBRE O COMITÊ E O TEMA</h2>
 				<%if(content.paragraphs) { %>
-				<%for(i = 0; i < content.paragraphs.length; i++) { %>
-				<p><%=content.paragraphs[i] %></p>
-				<%} %>
-				<%} %>
-				
-				<!--
+					<%for(i = 0; i < content.paragraphs.length; i++) { %>
+						<p>
+							<%=content.paragraphs[i] %>
+						</p>
+						<%} %>
+							<%} %>
+
+								<!--
 				<div class="row diretors-comitee">
 					<div class="col-md-6 center">
 						<div class="container center">
@@ -210,25 +233,31 @@
 			<div class="container">
 				<h2 class="center">DIRETORES</h2>
 				<div class="row diretors-comitee">
-				<%if(content.diretores) {%>
-					<%for (i = 0; i < content.diretores.length; i++) { %>
-						<%if(content.diretores.length % 2 === 0) { %>
-							<div class="col-md-6 center">
-						<%} else { %>
-							<div class="col-md-4 center">
-						<%} %>						
-							<h4 class="nomeSecretario"> <%=content.diretores[i].nome %></h4>
-							<h6 class="cargoSecretario"> - <%=content.diretores[i].cargo %></h6>
-							<%for (j = 0; j < content.diretores[i].descricao.length; j++) { %>
-								<p><%=content.diretores[i].descricao[j] %></p>
-							<%} %>
-						</div>
-					<%} %>
-				<%} %>
+					<%if(content.diretores) {%>
+						<%for (i = 0; i < content.diretores.length; i++) { %>
+							<%if(content.diretores.length % 2 === 0) { %>
+								<div class="col-md-6 center">
+									<%} else { %>
+										<div class="col-md-4 center">
+											<%} %>
+												<h4 class="nomeSecretario">
+													<%=content.diretores[i].nome %>
+												</h4>
+												<h6 class="cargoSecretario"> -
+													<%=content.diretores[i].cargo %>
+												</h6>
+												<%for (j = 0; j < content.diretores[i].descricao.length; j++) { %>
+													<p>
+														<%=content.diretores[i].descricao[j] %>
+													</p>
+													<%} %>
+										</div>
+										<%} %>
+											<%} %>
+								</div>
 				</div>
 			</div>
-			</div>
-			
+
 			<div class="container center">
 				<div class="text-center button-area">
 					<a href="/secretariado" class="btn btn-info btn-lg">Conheça o Secretariado</a>
