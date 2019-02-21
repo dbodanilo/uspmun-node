@@ -208,7 +208,7 @@ app.get("/unsc", function (sol, res) {
         "The system of debate of this committee will follow the pattern of other Model UN in São Paulo, with some changes in order to reflect better the reality of the UNSC.",
         "After determining what terrorism is to the UNSC, the next order of business shall be to formulate general strategies to prevent, combat and attenuate terrorist movements (in accordance to the committee definition of what is that)."
     ];
-
+	
     pagina.diretores = [
         {
             nome: "Victor Portela",
@@ -250,6 +250,7 @@ app.get("/unsc", function (sol, res) {
             ]
         }
     ]
+	pagina.studyguide = "/studyGuides/UNSC.pdf";
 
     res.render("comite-shell", { content: pagina });
 });
@@ -297,7 +298,8 @@ app.get("/prb", function (sol, res) {
             ]
         }
     ]
-
+	pagina.studyguide = "/studyGuides/PRB.pdf";
+	
     res.render("comite-shell", { content: pagina });
 });
 
@@ -366,7 +368,8 @@ app.get("/embraer", function (sol, res) {
             ]
         }
     ]
-
+	pagina.studyguide = "/studyGuides/Embraer.pdf";
+	
     res.render("comite-shell", { content: pagina });
 });
 
@@ -415,7 +418,8 @@ app.get("/ce", function (sol, res) {
             ]
         }
     ];
-
+	pagina.studyguide = "/studyGuides/CE.pdf";
+	
     res.render("comite-shell", { content: pagina });
 });
 
@@ -469,7 +473,8 @@ app.get("/oea", function (sol, res) {
             ]
         }
     ];
-
+	pagina.studyguide = "/studyGuides/OEA.pdf";
+	
     res.render("comite-shell", { content: pagina });
 });
 
@@ -506,7 +511,8 @@ app.get("/imprensa", function (sol, res) {
             ]
         }
     ];
-
+	pagina.studyguide = "/studyGuides/Imprensa.pdf";
+	
     res.render("comite-shell", { content: pagina });
 });
 
