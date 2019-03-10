@@ -1,3 +1,5 @@
+var port = process.env.PORT || 1234;
+
 var http = require("http");
 var fs = require("fs");
 
@@ -532,4 +534,4 @@ app.get("/secretariado", function (sol, res) {
 });
 
 var server = http.createServer(app);
-server.listen(1234, console.log("servidor rodando na porta 1234..."));
+server.listen(port, console.log("servidor rodando na porta " + port + "..."));
